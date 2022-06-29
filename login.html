@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Keeper</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" />
+ </head>
+ <body>
+  <div class="pure-menu pure-menu-horizontal">
+   <a href="index.html" class="pure-menu-heading pure-menu-link">Keeper &#128274 &#127776</a>
+   <ul class="pure-menu-list">
+    <li class="pure-menu-item">
+     <a href="index.html" class="pure-menu-link">Home</a>
+    </li>
+    <li class="pure-menu-item">
+     <a href="register.html" class="pure-menu-link">Register</a>
+    </li>
+    <li class="pure-menu-item">
+     <a href="login.html" class="pure-menu-link">Login</a>
+    </li>
+    <li class="pure-menu-item">
+     <a href="#" class="pure-menu-link upload">Upload to Keeper</a>
+    </li>
+   </ul>
+  </div>
+
+  <div class="container">
+   <div id="login-container">
+    <form action="upload.html" method="POST" class="pure-form pure-form-stacked">
+     <fieldset>
+      <legend>Login</legend>
+      <p>already have an account? fill in this form to login to your account</p>
+      <br />
+      <label for="aligned-name">Username</label>
+      <input type="text" id="aligned-name" placeholder="Username" />
+      <span class="pure-form-message">This is a required field.</span>
+      <label for="stacked-password">Password</label>
+      <input type="password" id="stacked-password" placeholder="Password" />
+      <span class="pure-form-message">This is a required field.</span>
+      <button type="submit" class="pure-button pure-button-primary">Login</button>
+      <button type="submit" class="pure-button pure-button-primary">Forgot Password</button>
+     </fieldset>
+    </form>
+   </div>
+  </div>
+ </body>
+</html>

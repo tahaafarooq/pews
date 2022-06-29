@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - Keeper</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" />
+ </head>
+ <body>
+  <div class="pure-menu pure-menu-horizontal">
+   <a href="index.html" class="pure-menu-heading pure-menu-link">Keeper &#128274 &#127776</a>
+   <ul class="pure-menu-list">
+    <li class="pure-menu-item">
+     <a href="index.html" class="pure-menu-link">Home</a>
+    </li>
+    <li class="pure-menu-item">
+     <a href="register.html" class="pure-menu-link">Register</a>
+    </li>
+    <li class="pure-menu-item">
+     <a href="login.html" class="pure-menu-link">Login</a>
+    </li>
+    <li class="pure-menu-item">
+     <a href="#" class="pure-menu-link upload">Upload to Keeper</a>
+    </li>
+   </ul>
+  </div>
+
+  <div class="container">
+   <div id="register-container">
+    <form class="pure-form pure-form-stacked">
+     <fieldset>
+      <legend>Register</legend>
+      <p>fill in this form to create an account</p>
+      <br />
+      <label for="aligned-name">Username</label>
+      <input type="text" id="aligned-name" placeholder="Username" />
+      <span class="pure-form-message">This is a required field.</span>
+      <label for="stacked-password">Password</label>
+      <input type="password" id="stacked-password" placeholder="Password" />
+      <span class="pure-form-message">This is a required field.</span>
+      <button type="submit" class="pure-button pure-button-primary">Register</button>
+      <button onclick="window.location.href='https://youtu.be/dQw4w9WgXcQ';"
+      type="submit" id="redir" class="pure-button pure-button-primary">Have an account?</button>
+     </fieldset>
+    </form>
+   </div>
+  </div>
+  <script src="/assets/script.js"></script>
+ </body>
+</html>

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --bg: #0C0D10;
+    --fc: whitesmoke;
+    --btn_bg: #0078E7;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #0C0D10;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+#welcome-heading {
+    color: var(--fc);
+    font-size: 300%;
+    text-align: center;
+     letter-spacing: 5px;
+    text-shadow: 10px 10px 25px var(--btn_bg),
+        -10px 10px 25px var(--btn_bg),
+        -10px -10px 25px var(--btn_bg),
+        10px -10px 25px var(--btn_bg);
+}
+
+.welcome-box {
+    width: 51vw;
+    height: 15vh;
+}
+
+#mq {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 100%;
+}
+
+.pure-menu {
+    height: 5vh;
+}
+
+.pure-menu-link {
+    margin: 10px;
+    border-radius: 10px;
+    color: var(--fc) !important;
+}
+
+.pure-menu-link:hover {
+    transform: scale(1.2);
+    transition: .2s linear;
+    color: var(--fc) !important;
+    background-color: var(--btn_bg) !important;
+}
+
+#register-container,
+#login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 30rem;
+}
+
+.pure-form-message,
+fieldset,
+legend, p {
+    color: var(--fc) !important;
+}
+
+label {
+    font-size: 20px;
+}
+
+legend {
+    font-size: 50px;
+}
+
+fieldset {
+    width: 400px;
+}
+
+input {
+    width: 400px;
+    box-shadow: none !important;
+    border-bottom-style: solid;
+    outline: none;
+    background-color: var(--bg);
+    color: var(--fc);
+}
+
+input:focus {
+    transform: scale(1.3);
+    transition: .2s linear;
+}
+
+button {
+    border-radius: 10px !important;
+}
+
+@media only screen and (max-width:500px) {
+    .pure-menu-heading {
+        display: none !important;
+    }
+
+    .pure-menu-link {
+        font-size: 15px;
+    }
+}

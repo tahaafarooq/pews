@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: #0C0D10;
+    background-color: var(--bg);
     font-family: 'Roboto', Arial, sans-serif;
 }
 
@@ -66,8 +66,7 @@ body {
     background-color: var(--btn_bg) !important;
 }
 
-#register-container,
-#login-container {
+.content-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,6 +108,23 @@ input:focus {
 
 button {
     border-radius: 10px !important;
+}
+
+button:hover {
+    border-radius: 10px !important;
+    background-color: #0067c7bb;
+    transition: .2s ease-in-out;
+}
+
+#upload-input {
+    border-radius: 10px;
+    background-color: #1d2027;
+    border: none;
+    color: var(--fc);
+}
+ 
+#upload-input:focus {
+    transform: none;
 }
 
 @media only screen and (max-width:500px) {

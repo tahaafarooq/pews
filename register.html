@@ -22,24 +22,30 @@
      <a href="login.html" class="pure-menu-link">Login</a>
     </li>
     <li class="pure-menu-item">
-     <a href="#" class="pure-menu-link upload">Upload to Keeper</a>
+     <a href="upload.html" class="pure-menu-link upload">Upload to Keeper</a>
     </li>
    </ul>
   </div>
 
   <div class="container">
-   <div id="register-container">
-    <form class="pure-form pure-form-stacked" autocomplete="off">
+   <div class="content-container">
+    <form action="" method="POST" class="pure-form pure-form-stacked" autocomplete="off">
      <fieldset>
       <legend>Register</legend>
       <p>fill in this form to create an account</p>
       <br />
-      <label for="aligned-name">Username</label>
-      <input type="text" id="aligned-name" placeholder="Username" />
+      <b><label for="aligned-name">Username</label></b>
+      <input type="text" id="aligned-name" placeholder="Username" name="uname" required/>
       <span class="pure-form-message">This is a required field.</span>
-      <label for="stacked-password">Password</label>
-      <input type="password" id="stacked-password" placeholder="Password" />
+
+      <b><label for="stacked-password">Password</label></b>
+      <input type="password" id="stacked-password" placeholder="Password" name="pass" required/>
       <span class="pure-form-message">This is a required field.</span>
+
+      <b><label for="repeat-password">Repeat Password</label></b>
+      <input type="password" id="repeat-password" placeholder="Repeat Password" name="repeat-pass" required/>
+      <span class="pure-form-message">This is a required field.</span>
+
       <button type="submit" class="pure-button pure-button-primary">Register</button>
       <button onclick="window.location.href='https://youtu.be/dQw4w9WgXcQ';"
       type="submit" id="redir" class="pure-button pure-button-primary">Have an account?</button>

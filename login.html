@@ -22,24 +22,26 @@
      <a href="login.html" class="pure-menu-link">Login</a>
     </li>
     <li class="pure-menu-item">
-     <a href="#" class="pure-menu-link upload">Upload to Keeper</a>
+     <a href="upload.html" class="pure-menu-link upload">Upload to Keeper</a>
     </li>
    </ul>
   </div>
 
   <div class="container">
-   <div id="login-container">
-    <form action="upload.html" method="POST" class="pure-form pure-form-stacked" autocomplete="off">
+   <div class="content-container">
+    <form action="" method="POST" class="pure-form pure-form-stacked" autocomplete="off">
      <fieldset>
       <legend>Login</legend>
       <p>already have an account? fill in this form to login to your account</p>
       <br />
-      <label for="aligned-name">Username</label>
-      <input type="text" id="aligned-name" placeholder="Username" />
+      <b><label for="aligned-name">Username</label></b>
+      <input type="text" id="aligned-name" placeholder="Username" name="uname" required/>
       <span class="pure-form-message">This is a required field.</span>
-      <label for="stacked-password">Password</label>
-      <input type="password" id="stacked-password" placeholder="Password" />
+
+      <b><label for="stacked-password">Password</label></b>
+      <input type="password" id="stacked-password" placeholder="Password" name="pass" required/>
       <span class="pure-form-message">This is a required field.</span>
+        
       <button type="submit" class="pure-button pure-button-primary">Login</button>
       <button type="submit" class="pure-button pure-button-primary">Forgot Password</button>
      </fieldset>

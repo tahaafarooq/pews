@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home - Keeper</title>
-  <link rel="stylesheet" href="/assets/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/pure-min.css"/>
  </head>
  <body>
   <div class="pure-menu pure-menu-horizontal">
@@ -35,5 +35,15 @@
     </p>
    </div>
   </div>
+  <script src="/assets/js/anime.min.js"></script>
+  <script src="/assets/js/script.js"></script>
+  <script>
+    anime({
+        targets: '#welcome-heading',
+        translateX: '75',
+        duration: 2000,
+        easing: 'easeOutCubic'
+    });
+  </script>
  </body>
 </html>
